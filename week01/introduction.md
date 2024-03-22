@@ -52,18 +52,19 @@ attended the lauch....
 ## JSON Format
 ```json
 {
-    "title": "structured text",
-    "author": "Mary River",
+    "writer": {
+        "firstname": "Mary",
+        "lastname": "River"
+        
+    },
     "year": 2024,
     "type": "Report",
-    "description": "This year 2024 will be the beginning of a new project.",
-    "project": {
-        "name": "New Project",
-        "designers": [
-            "Mary River",
-            "Matt Jones"
-        ],
-        "launchDetails": "Designers of the new project Mary River and Matt Jones attended the launch..."
-    }
+    "description": [
+        "This year 2024 will be the beginning of a ",
+        "new project.Designers of the new project ",
+        "Mary River and Matt Jones attended the ",
+        "launch of type:marketing"
+    ]
 }
 ```
+
