@@ -20,3 +20,50 @@ Disk storage refers to the various ways data can be stored in a computer system.
 For more information, you can refer to the following resources:
 - [List of file signatures in hex](https://en.wikipedia.org/wiki/List_of_file_signatures)
 - [Unicode](https://home.unicode.org/)
+
+
+## plain text
+```
+Mary River
+2024
+
+Report
+
+This year 2024 will be the beginning of a new project.
+Designers of the new project Mary River and Matt Jones
+attended the lauch....
+```
+
+problem with plain text: Hard or impossible to handle programmarically
+
+## structured text
+```
+Writer: Mary River
+Year: 2024
+
+Type: Report
+
+This year 2024 will be the beginning of a new project.
+Designers of the new project Mary River and Matt Jones
+attended the lauch....
+```
+
+
+## JSON Format
+```json
+{
+    "title": "structured text",
+    "author": "Mary River",
+    "year": 2024,
+    "type": "Report",
+    "description": "This year 2024 will be the beginning of a new project.",
+    "project": {
+        "name": "New Project",
+        "designers": [
+            "Mary River",
+            "Matt Jones"
+        ],
+        "launchDetails": "Designers of the new project Mary River and Matt Jones attended the launch..."
+    }
+}
+```
