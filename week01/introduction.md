@@ -124,4 +124,17 @@ attended the lauch of type:marketing
 "Vera","River", 10
 ```
 
+### ini
+```ini
+;this is a comment in ini file
+[database]
+driver=mysql
+host=localhost
+port=3306
+databasename=persondb
+[user]
+username=adel
+```
+
+
 
