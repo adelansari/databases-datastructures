@@ -15,4 +15,16 @@ function search(searchKey, value) {
   return found;
 }
 
-console.log(search('firstname', 'Mary'));
+console.log(`Persons with the first name 'Mary':`, search('firstname', 'Mary'));
+console.log(`Persons with the last name 'River':`, search('lastname', 'River'));
+console.log(`Persons with the age 30:`, search('age', 30));
+const age = 30;
+const result = search('age', age);
+if (result.length > 0) {
+  console.log(`Persons with the age ${age}:`);
+  for (const person of result) {
+    console.log(`- ${person.firstname} ${person.lastname}`);
+  }
+} else {
+  console.log(`No persons with the age ${age} found.`);
+}
