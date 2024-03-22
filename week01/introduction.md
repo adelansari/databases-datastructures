@@ -125,6 +125,7 @@ attended the lauch of type:marketing
 ```
 
 ### ini
+usually used for config info
 ```ini
 ;this is a comment in ini file
 [database]
