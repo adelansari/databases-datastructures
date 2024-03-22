@@ -118,9 +118,10 @@ attended the lauch of type:marketing
 
 ### CSV
 ```csv
-firstname,lastname,age
-Mary,River,25
-Matt,Jones,30
+"firstname","lastname","age"
+"Mary","River",25
+"Matt","Jones",30
+"Vera","River", 10
 ```
 
 
